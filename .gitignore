@@ -1,7 +1,0 @@
-#ignore .metadata
-.metadata
-#.gitignore
-#ignore intermediate files
-*.xml
-#ignore test code
-__test*
