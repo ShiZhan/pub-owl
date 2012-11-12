@@ -1,5 +1,2 @@
 syntax: glob
-#ignore test XML
-*.xml
-#ignore test code
-__test*
+*.pyc
