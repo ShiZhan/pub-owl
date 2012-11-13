@@ -53,5 +53,11 @@
         //## "url" : "https://www.usenix.org/conference/mad12/tech-schedule/workshop-program",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/mad2012.htm",
         "node" : "//div/h2/a"
+    },
+    {
+        "name" : "CNKI 华中科技大学计算机学院博士学位论文 2011",
+        //## "url" : "http://epub.cnki.net/kns/brief/brief.aspx?curpage=1&RecordsPerPage=50&QueryID=9&ID=&turnpage=1&tpagemode=L&dbPrefix=CDMD&Fields=&DisplayMode=listmode&PageName=ASP.brief_result_aspx&ctl=e0827f16-463d-4e6d-a9eb-fbdbb62507b9&sKuaKuID=9#J_ORDER",
+        "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/cnki_phd_hust_2011.htm",
+        "node" : "//a[@class=\"fz14\"]"
     }
 ]
