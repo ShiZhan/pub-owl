@@ -1,1 +1,0 @@
-@echo Created by Shi.Zhan @ 2012&&@echo setting python libpath for cloned source modules:&&@echo ----- BeautifulSoap -----&&@echo BeautifulSoap&&@set PYTHONPATH=e:\Works\hive\beautifulsoup.bzr;%PYTHONPATH%
