@@ -4,21 +4,54 @@
         //## use local page for test
         //## "url" : "https://www.usenix.org/conference/osdi12/tech-schedule/osdi-12-program",
         "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/osdi2012.htm",
-        "node" : "h2",
-        "attrs" : {"class" : "node-title clearfix"}
+        "node" : "//div/h2/a"
     },
     {
         "name" : "WWW 2011",
         //## "url" : "http://www.www2011india.com/proceeding/forms/pcontents.htm",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/www2011.htm",
-        "node" : "font",
-        "attrs" : {"color" : "#177EB9", "face" : "Arial", "size" : "2"}
+        "node" : "//table/tr/td/p/a/font"
     },
     {
         "name" : "SOSP 2011",
         //## "url" : "http://sigops.org/sosp/sosp11/current/index.html",
         "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/sosp2011.html",
-        "node" : "div",
-        "attrs" : {"class" : "paperTitle"}
+        "node" : "//div[@class=\"paperTitle\"]"
+    },
+    {
+        "name" : "NSDI 2012",
+        //## "url" : "https://www.usenix.org/conference/nsdi12/tech-schedule/technical-sessions",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/nsdi2012.htm",
+        "node" : "//div/h2/a"
+    },
+    {
+        "name" : "SYSSTOR 2012",
+        //## "url" : "http://www.research.ibm.com/haifa/conferences/systor2012/program.shtml",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/sysstor2012.htm",
+        "node" : "//div/h2/a"
+    },
+    {
+        "name" : "HotStorage 2012",
+        //## "url" : "https://www.usenix.org/conference/hotstorage12/tech-schedule/workshop-program",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/hotstorage2012.htm",
+        "node" : "//div/h2/a"
+    },
+    {
+        "name" : "ATC 2012",
+        //## "url" : "https://www.usenix.org/conference/atc12/tech-schedule/usenix-atc-12-technical-sessions",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/atc2012.htm",
+        "node" : "//div/h2/a"
+    },
+    {
+        "name" : "WebApps 2012",
+        //## "url" : "https://www.usenix.org/conference/webapps12/tech-schedule/webapps-12-technical-sessions",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/webapps2012.htm",
+        "node" : "//div/h2/a"
+    },
+    {
+        "name" : "MAD 2012",
+        //## "url" : "https://www.usenix.org/conference/mad12/tech-schedule/workshop-program",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/mad2012.htm",
+        "node" : "//div/h2/a"
     }
 ]

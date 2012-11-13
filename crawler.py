@@ -8,28 +8,35 @@
 # Copyright:   (c) ShiZhan 2012
 # Licence:     MIT
 #-------------------------------------------------------------------------------
-#!/usr/bin/env python
+#!/usr/bin/python
+#coding=utf-8
 
 import urllib2
 import json
 import re
-from bs4 import BeautifulSoup
+from lxml import html, etree
 
 def main():
     try:
-        sites_file_raw = open('sites.json', mode='r').read()
-        sites_no_comments = re.sub(r'//##.*', r'', sites_file_raw)
-        sites = json.loads(sites_no_comments)
+        with open('sites.json', mode='r') as sites_file:
+            sites_no_comments = re.sub(r'//##.*', r'', sites_file.read())
+            sites = json.loads(sites_no_comments)
+            sites_file.close()
     except Exception, e:
         raise e
- 
+
     for site in sites:
         print "Loading site: ", site['name']
         page = urllib2.urlopen(site['url']).read()
+
         print "Read ", len(page), " Bytes from page: ", site['url']
-        soup = BeautifulSoup(page)
-        for node_title in soup.findAll(site['node'], attrs = site['attrs']):
-            print node_title.prettify()
+
+        try:
+            page_dom = html.fromstring(page)
+            for node_title in page_dom.xpath(site['node']):
+                print etree.tostring(node_title, pretty_print=True, method="html")
+        except Exception, e:
+            raise e
 
 if __name__ == '__main__':
     main()
