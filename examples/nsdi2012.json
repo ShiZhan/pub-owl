@@ -1,7 +1,6 @@
 [
     {
         "name" : "NSDI 2012",
-        //## "url" : "https://www.usenix.org/conference/nsdi12/tech-schedule/technical-sessions",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/nsdi2012.htm",
         "node" : "//div/h2/a/text()"
     }

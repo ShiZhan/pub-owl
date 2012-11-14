@@ -1,7 +1,6 @@
 [
     {
         "name" : "WWW 2011",
-        //## "url" : "http://www.www2011india.com/proceeding/forms/pcontents.htm",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/www2011.htm",
         "node" : "/html/body/div/table/tbody/tr/td[2]/p[3]/a/font/text()"
     }

@@ -1,7 +1,6 @@
 [
     {
         "name" : "HotStorage 2012",
-        //## "url" : "https://www.usenix.org/conference/hotstorage12/tech-schedule/workshop-program",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/hotstorage2012.htm",
         "node" : "//div/h2/a/text()"
     }

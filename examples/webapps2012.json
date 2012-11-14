@@ -1,7 +1,6 @@
 [
     {
         "name" : "WebApps 2012",
-        //## "url" : "https://www.usenix.org/conference/webapps12/tech-schedule/webapps-12-technical-sessions",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/webapps2012.htm",
         "node" : "//div/h2/a/text()"
     }

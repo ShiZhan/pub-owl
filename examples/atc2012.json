@@ -1,7 +1,6 @@
 [
     {
         "name" : "ATC 2012",
-        //## "url" : "https://www.usenix.org/conference/atc12/tech-schedule/usenix-atc-12-technical-sessions",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/atc2012.htm",
         "node" : "//div/h2/a/text()"
     }

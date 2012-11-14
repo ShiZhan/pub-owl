@@ -14,7 +14,6 @@
 import optparse
 import urllib2
 import json
-import re
 from lxml import html
 
 def main():
@@ -31,8 +30,7 @@ def main():
 
     try:
         with open(sitesfile, mode='r') as sites_file:
-            sites_no_comments = re.sub(r'//##.*', r'', sites_file.read())
-            sites = json.loads(sites_no_comments)
+            sites = json.loads(sites_file.read())
             sites_file.close()
     except Exception, e:
         raise e
@@ -45,9 +43,30 @@ def main():
 
         try:
             page_dom = html.fromstring(page)
-            for node_title_raw in page_dom.xpath(site['node']):
-                node_title = ' '.join(node_title_raw.split())
-                print node_title.encode("utf-8")
+
+            for node in page_dom.xpath(site['node']):
+                # a group of nodes, each contains a publication
+                # xpath expression can be checked through various tools
+                # e.g. the 'xpath check addon in firefox'
+
+                # in some cases, these strings are broken into pieces
+                node_title_raw = node.xpath(site['title'])
+                # need to deal with nodes which lack some information
+                node_title_full = ''
+                for node_title_part in node_title_raw:
+                    node_title_full += node_title_part
+                # translate linefeed into spaces, merge multiple lines
+                node_title = ' '.join(node_title_full.split())
+                print "[TITLE] ", node_title.encode("utf-8")
+
+                # same as above, working on author information
+                node_author_raw = node.xpath(site['author'])
+                node_author_full = ''
+                for node_author_part in node_author_raw:
+                    node_author_full += node_author_part
+                node_author = ' '.join(node_author_full.split())
+                print "[AUTHOR]", node_author.encode("utf-8"), '\n'
+
         except Exception, e:
             raise e
 
