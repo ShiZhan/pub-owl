@@ -45,7 +45,8 @@ def main():
 
         try:
             page_dom = html.fromstring(page)
-            for node_title in page_dom.xpath(site['node']):
+            for node_title_raw in page_dom.xpath(site['node']):
+                node_title = ' '.join(node_title_raw.split())
                 print node_title.encode("utf-8")
         except Exception, e:
             raise e

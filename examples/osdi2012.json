@@ -4,6 +4,6 @@
         //## use local page for test
         //## "url" : "https://www.usenix.org/conference/osdi12/tech-schedule/osdi-12-program",
         "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/osdi2012.htm",
-        "node" : "//div/h2/a/text()"
+        "node" : "//h2/a/text()"
     }
 ]

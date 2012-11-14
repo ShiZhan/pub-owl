@@ -1,0 +1,8 @@
+[
+    {
+        "name" : "SOSP 2011",
+        //## "url" : "http://sigops.org/sosp/sosp11/current/index.html",
+        "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/sosp2011.html",
+        "node" : "//div[@class=\"paperTitle\"]/text()"
+    }
+]
