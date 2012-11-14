@@ -2,6 +2,8 @@
     {
         "name" : "OSDI 2012",
         "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/osdi2012.htm",
-        "node" : "//h2/a/text()"
+        "node" : "//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]",
+        "title" : "./h2/a/text()",
+        "author" : "./div/div[2]/div/div/p/text()"
     }
 ]

@@ -56,7 +56,7 @@ def main():
                 print "[TITLE] ", node_title.encode("utf-8")
 
                 # same as above, working on author information
-                node_author = ' '.join(' '.join(node.xpath(site['author'])).split())
+                node_author = ' '.join(';'.join(node.xpath(site['author'])).split())
                 print "[AUTHOR]", node_author.encode("utf-8"), '\n'
 
         except Exception, e:
