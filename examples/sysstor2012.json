@@ -2,6 +2,9 @@
     {
         "name" : "SYSSTOR 2012",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/sysstor2012.htm",
-        "node" : "//div/h2/a/text()"
+        "node" : "//div/h2/a/text()",
+        "properties" : {
+            
+        }
     }
 ]

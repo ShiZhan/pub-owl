@@ -3,7 +3,9 @@
         "name" : "WWW 2011",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/www2011.htm",
         "node" : "//table/tbody/tr/td[2]/p[3]",
-        "title" : "./a/font/text()",
-        "author" : "./font[position()>1]/font/text()"
+        "properties" : {
+            "title" : "./a/font/text()",
+            "author" : "./font[position()>1]/font/text()"
+        }
     }
 ]

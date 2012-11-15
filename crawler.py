@@ -49,15 +49,12 @@ def main():
                 # xpath expression can be checked through various tools
                 # e.g. the 'xpath check addon in firefox'
 
-                # 1. in some fragile html documents, these strings are broken into pieces
-                # 2. translate linefeed into spaces, merge multiple lines
-                # join (string pieces) --> split (ugly LF) --> join
-                node_title = ' '.join(' '.join(node.xpath(site['title'])).split())
-                print "[TITLE] ", node_title.encode("utf-8")
-
-                # same as above, working on author information
-                node_author = ' '.join(';'.join(node.xpath(site['author'])).split())
-                print "[AUTHOR]", node_author.encode("utf-8"), '\n'
+                for (target, source) in site['properties'].items():
+                    # 1. in some fragile html documents, these strings are broken into pieces
+                    # 2. translate linefeed into spaces, merge multiple lines
+                    # join (string pieces) --> split (ugly LF) --> join
+                    value = ' '.join(' '.join(node.xpath(source)).split())
+                    print "[" + target + "] ", value.encode("utf-8")
 
         except Exception, e:
             raise e

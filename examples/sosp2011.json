@@ -3,7 +3,9 @@
         "name" : "SOSP 2011",
         "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/sosp2011.html",
         "node" : "//div[@class=\"paper\"]",
-        "title" : "./div[@class=\"paperTitle\"]/text()",
-        "author" : "./div[@class=\"authors\"]/text()"
+        "properties" : {
+            "title" : "./div[@class=\"paperTitle\"]/text()",
+            "author" : "./div[@class=\"authors\"]/text()"
+        }
     }
 ]

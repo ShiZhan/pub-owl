@@ -2,6 +2,12 @@
     {
         "name" : "WebApps 2012",
         "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/webapps2012.htm",
-        "node" : "//div/h2/a/text()"
+        "node" : "//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]",
+        "properties" : {
+            "title" : "./h2/a/text()",
+            "author" : "./div/div[2]/div/div/p/text()",
+            "affiliation" : "./div/div/div/div/p/em/text()",
+            "fulltext" : "./div/div[3]/div/div/span/a/attribute::href"
+        }
     }
 ]

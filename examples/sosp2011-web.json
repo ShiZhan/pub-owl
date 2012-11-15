@@ -3,7 +3,9 @@
         "name" : "SOSP 2011",
         "url" : "http://sigops.org/sosp/sosp11/current/index.html",
         "node" : "//div[@class=\"paper\"]",
-        "title" : "./div[@class=\"paperTitle\"]/text()",
-        "author" : "./div[@class=\"authors\"]/text()"
+        "properties" : {
+            "title" : "./div[@class=\"paperTitle\"]/text()",
+            "author" : "./div[@class=\"authors\"]/text()"
+        }
     }
 ]
