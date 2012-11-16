@@ -45,6 +45,7 @@ def main():
             page_dom = html.fromstring(page)
 
             for node in page_dom.xpath(site['node']):
+                print "---"
                 # a group of nodes, each contains a publication
                 # xpath expression can be checked through various tools
                 # e.g. the 'xpath check addon in firefox'

@@ -1,0 +1,12 @@
+[
+    {
+        "name" : "NSDI 2012",
+        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/sc2012.htm",
+        "node" : "/html/body[@id='noheaderimg']/table[@class='tablesched'][1]/tbody/tr",
+        "properties" : {
+            "title" : "./td[2]/a/text()",
+            "author" : "./td[3]/text()",
+            "link" : "./td[2]/a/attribute::href"
+        }
+    }
+]
