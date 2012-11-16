@@ -1,6 +1,6 @@
 [
     {
-        "name" : "NSDI 2012",
+        "name" : "SC 2012",
         "url" : "http://sc12.supercomputing.org/schedule/page.php",
         "node" : "/html/body[@id='noheaderimg']/table[@class='tablesched'][1]/tbody/tr",
         "properties" : {

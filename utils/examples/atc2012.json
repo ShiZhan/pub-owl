@@ -1,7 +1,7 @@
 [
     {
-        "name" : "HotStorage 2012",
-        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/hotstorage2012.htm",
+        "name" : "ATC 2012",
+        "url" : "https://www.usenix.org/conference/atc12/tech-schedule/usenix-atc-12-technical-sessions",
         "node" : "//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]",
         "properties" : {
             "title" : "./h2/a/text()",

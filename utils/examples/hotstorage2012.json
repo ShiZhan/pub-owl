@@ -1,7 +1,7 @@
 [
     {
-        "name" : "OSDI 2012",
-        "url" : "file:///E:/Works/hive/pub-owl.collector/.testpage/osdi2012.htm",
+        "name" : "HotStorage 2012",
+        "url" : "https://www.usenix.org/conference/hotstorage12/tech-schedule/workshop-program",
         "node" : "//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]",
         "properties" : {
             "title" : "./h2/a/text()",

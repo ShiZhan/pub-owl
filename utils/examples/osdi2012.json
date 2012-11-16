@@ -1,7 +1,7 @@
 [
     {
-        "name" : "ATC 2012",
-        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/atc2012.htm",
+        "name" : "OSDI 2012",
+        "url" : "https://www.usenix.org/conference/osdi12/tech-schedule/osdi-12-program",
         "node" : "//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]",
         "properties" : {
             "title" : "./h2/a/text()",

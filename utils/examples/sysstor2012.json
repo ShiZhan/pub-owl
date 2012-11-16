@@ -1,7 +1,7 @@
 [
     {
         "name" : "SYSSTOR 2012",
-        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/sysstor2012.htm",
+        "url" : "http://www.research.ibm.com/haifa/conferences/systor2012/program.shtml",
         "node" : "//div/h2/a/text()",
         "properties" : {
             

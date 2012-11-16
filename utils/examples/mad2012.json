@@ -1,7 +1,7 @@
 [
     {
-        "name" : "NSDI 2012",
-        "url" : "file:///e:/Works/hive/pub-owl.collector/.testpage/nsdi2012.htm",
+        "name" : "MAD 2012",
+        "url" : "https://www.usenix.org/conference/mad12/tech-schedule/workshop-program",
         "node" : "//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]",
         "properties" : {
             "title" : "./h2/a/text()",
