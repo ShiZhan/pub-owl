@@ -1,1 +1,0 @@
-@echo Created by Shi.Zhan @ 2012&&@echo setting python libpath for scrapy:&&@echo scrapy (twisted (pyopenssl, zope.interface), w3lib)&&@set PYTHONPATH=e:\Works\hive\pyopenssl;e:\Works\hive\zope.interface.git\src;e:\Works\hive\twisted.git;e:\Works\hive\w3lib.git;e:\Works\hive\scrapy.git;%PYTHONPATH%&&
