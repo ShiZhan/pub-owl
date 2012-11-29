@@ -1,18 +1,20 @@
 from scrapy.selector import HtmlXPathSelector
 from scrapy.spider import BaseSpider
 from papers.items import PapersItem
+import json
 
 class UsenixSpider(BaseSpider):
     name = 'usenix'
     allowed_domains = ['www.usenix.org']
-    start_urls = [
-        'https://www.usenix.org/conference/osdi12/tech-schedule/osdi-12-program',
-        'https://www.usenix.org/conference/nsdi12/tech-schedule/technical-sessions',
-        'https://www.usenix.org/conference/atc12/tech-schedule/usenix-atc-12-technical-sessions',
-        'https://www.usenix.org/conference/webapps12/tech-schedule/webapps-12-technical-sessions',
-        'https://www.usenix.org/conference/hotstorage12/tech-schedule/workshop-program',
-        'https://www.usenix.org/conference/mad12/tech-schedule/workshop-program',
-    ]
+
+    try:
+        with open('usenix_urls.json', mode='r') as usenix_urls:
+            urls = json.loads(usenix_urls.read())
+            usenix_urls.close()
+    except Exception, e:
+        raise e
+
+    start_urls = urls
 
     def parse(self, response):
         hxs = HtmlXPathSelector(response)
