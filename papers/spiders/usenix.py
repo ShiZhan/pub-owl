@@ -11,21 +11,37 @@ class UsenixSpider(BaseSpider):
         'https://www.usenix.org/conference/atc12/tech-schedule/usenix-atc-12-technical-sessions',
         'https://www.usenix.org/conference/webapps12/tech-schedule/webapps-12-technical-sessions',
         'https://www.usenix.org/conference/hotstorage12/tech-schedule/workshop-program',
-        'https://www.usenix.org/conference/mad12/tech-schedule/workshop-program'
+        'https://www.usenix.org/conference/mad12/tech-schedule/workshop-program',
     ]
 
     def parse(self, response):
         hxs = HtmlXPathSelector(response)
-        nodes = hxs.select('//div[@id and @class=\"node node-paper node-teaser paper-type-0 clearfix\"]')
+        nodes = hxs.select('//div[@id and @class="node node-paper node-teaser paper-type-0 clearfix"]')
+        conference = hxs.select('/html/head/title/text()').extract()
         items = []
 
         for node in nodes:
             item = PapersItem()
+            item['conference'] = conference
             item['title'] = node.select('h2/a/text()').extract()
-            item['author'] = node.select('div/div[2]/div/div/p/text()').extract()
-            item['affiliation'] = node.select('div/div/div/div/p/em/text()').extract()
-            item['fulltext'] = node.select('div/div[3]/div/div/span/a/attribute::href').extract()
-            item['conference'] = node.select('/html/head/title/text()').extract()
+
+            content = node.select('div[@class="content"]')
+            item['author'] = content.select(
+                'div[@class="field field-name-field-paper-people-text field-type-text-long field-label-hidden"]\
+                /div[@class="field-items"]/div[@class="field-item even"]/p/text()'
+                ).extract()
+            item['affiliation'] = content.select(
+                'div[@class="field field-name-field-paper-people-text field-type-text-long field-label-hidden"]\
+                /div[@class="field-items"]/div[@class="field-item even"]/p/em/text()'
+                ).extract()
+            item['description'] = content.select(
+                'div[@class="field field-name-field-paper-description-long field-type-text-long field-label-hidden"]'
+                ).extract()
+            item['fulltext'] = content.select(
+                'div[@class="field field-name-field-presentation-pdf field-type-file field-label-hidden"]\
+                /div/div/span/a/attribute::href'
+                ).extract()
+
             items.append(item)
 
         return items

@@ -12,5 +12,6 @@ class PapersItem(Item):
     author = Field()
     affiliation = Field()
     fulltext = Field()
+    description = Field()
     conference = Field()
     pass
