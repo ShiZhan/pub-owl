@@ -37,7 +37,8 @@ class UsenixSpider(BaseSpider):
                 /div[@class="field-items"]/div[@class="field-item even"]/p/em/text()'
                 ).extract()
             item['description'] = content.select(
-                'div[@class="field field-name-field-paper-description-long field-type-text-long field-label-hidden"]'
+                'div[@class="field field-name-field-paper-description-long field-type-text-long field-label-hidden"]\
+                /p'
                 ).extract()
             item['fulltext'] = content.select(
                 'div[@class="field field-name-field-presentation-pdf field-type-file field-label-hidden"]\
