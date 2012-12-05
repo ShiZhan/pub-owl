@@ -10,8 +10,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://purl.org/ontology/pubo#"
-     xml:base="http://purl.org/ontology/pubo"
+<rdf:RDF xmlns="https://github.com/ShiZhan/pub-owl/blob/master/model/poap.owl#"
+     xml:base="https://github.com/ShiZhan/pub-owl/blob/master/model/poap.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"

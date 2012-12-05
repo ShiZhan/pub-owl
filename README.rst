@@ -6,7 +6,22 @@ data collector
 
 A web crawler for collecting online academic publication metadata.
 
-Crawler based on scrapy_ framework.
+Based on scrapy_ framework, use :code:`pip install scrapy` to build up running environment.
+
+spiders
+^^^^^^^
+
+Spiders for collecting academic publication metadata.
+
+usenix
+++++++
+
+Collecting bibliography data from some selected `USENIX conferences`_.
+
+usenix_proceedings
+++++++++++++++++++
+
+Collecting paper list from all `USENIX proceedings`_ since 1993. 
 
 rdf adapter
 -----------
@@ -24,3 +39,5 @@ front end
 .. _RDF: http://www.w3.org/RDF/
 .. _rdflib: https://github.com/RDFLib/rdflib
 .. _FOAF: http://xmlns.com/foaf/spec/
+.. _`USENIX conferences`: https://www.usenix.org/conferences/past
+.. _`USENIX proceedings`: https://www.usenix.org/publications/proceedings
