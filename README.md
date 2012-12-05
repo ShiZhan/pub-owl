@@ -1,13 +1,17 @@
 pub-owl.collector
 =======
 
-pub-owl ontology data collector
+data collector
+------
 
-A web crawler for collecting online academic publication metadata and translates into pub-owl ontology as instances.
+A web crawler for collecting online academic publication metadata.
 
 Crawler based on [scrapy](https://github.com/scrapy/scrapy) framework.
 
-Ontology based on [FOAF](http://xmlns.com/foaf/spec/) specification.
+rdf adapter
+------
 
-Ontology parser based on [rdflib](https://github.com/RDFLib/rdflib).
+Translates crawled data into pub-owl ontology as instances.
+
+Work with collected data, convert to [W3C Resource Description Framework (RDF)](http://www.w3.org/RDF/) model by using [rdflib](https://github.com/RDFLib/rdflib) and [FOAF](http://xmlns.com/foaf/spec/) specification.
 
