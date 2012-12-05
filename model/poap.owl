@@ -20,7 +20,6 @@
     <owl:Ontology rdf:about="http://purl.org/ontology/poap/">
         <rdfs:comment>Publication of a People = POAP</rdfs:comment>
         <terms:creator>ShiZhan</terms:creator>
-        <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Ontology>
     
