@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-curl http://xmlns.com/foaf/spec/index.rdf -o foaf.rdf
